@@ -17,8 +17,9 @@ public class Restaurant {
 	}
 
 	public boolean isRestaurantOpen() {
-		 return true;
-	        //DELETE ABOVE STATEMENT AND WRITE CODE HERE
+		LocalTime currentTime = getCurrentTime();
+		return currentTime.isAfter(openingTime) && currentTime.isBefore(closingTime);
+		// DELETE ABOVE STATEMENT AND WRITE CODE HERE
 	}
 
 	public LocalTime getCurrentTime() {
@@ -26,8 +27,9 @@ public class Restaurant {
 	}
 
 	public List<Item> getMenu() {
-		 return null;
-		 //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
+		return menu;
+		// return null;
+		// DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
 	}
 
 	private Item findItemByName(String itemName) {
