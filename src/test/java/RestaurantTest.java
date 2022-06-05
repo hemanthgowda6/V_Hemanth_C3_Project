@@ -63,7 +63,7 @@ class RestaurantTest {
 
 	// <<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	@Test
-	public void getTotalPrice() {
+	public void testGetTotalPrice() {
 		List<String> itemList = new ArrayList<>();
 		itemList.add("dosa");
 		itemList.add("idly");
